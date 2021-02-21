@@ -1,0 +1,556 @@
+body {
+    background-image: url(https://www.kastapp.co/images/gradient-violet-bg.jpg);
+    background-position: 100% 202%;
+    background-size: cover;
+    width: 100%;
+}
+
+/* Nav bar */
+
+.top-menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: -20px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.top-menu ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.top-menu ul li a {
+    margin: 15px;
+    padding: 5px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-menu .fa-chevron-down {
+    display: inline;
+    margin: 10px;
+    padding: 2px;
+}
+
+.logo-container {
+    display: inline-flex;
+    width: 48%;
+}
+
+#kast-logo {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: -200px;
+}
+
+#kast-logo:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+/* First dropdown 'About'*/
+
+/* setup */
+
+.in-menu1 {
+    display: none;
+}
+
+.top-menu ul li:hover .in-menu1 {
+    display: block;
+    position: absolute;
+    line-height: 0%;
+    width: 200px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/* 1.1) What is Kast  */
+
+#menu1-select1 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    padding: 12px 0px 0px 0px;
+    color: grey;
+}
+
+#menu1-select1:hover {
+    text-decoration: underline;
+    color: black
+}
+
+/* 1.2) Kast TV */
+
+#menu1-select2 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    color: grey;
+    padding: 12px 0px 0px 0px
+}
+
+#menu1-select2:hover {
+    text-decoration: underline;
+    color: black
+}
+
+/* 1.3) Blog (add icon) */
+
+#menu1-select3 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    color: grey;
+    padding: 12px 0px 0px 0px
+}
+
+#menu1-select3 .fa-external-link-square-alt {
+    display: inline-flex;
+    line-height: 0%;
+    padding-inline-start: 10px;
+}
+
+#menu1-select3:hover {
+    text-decoration: underline;
+    color: black
+}
+
+/* 1.4) Press release (add Icon) */
+
+#menu1-select4 .fa-external-link-square-alt {
+    display: inline-flex;
+    line-height: 0%;
+    padding-inline-start: 10px;
+}
+
+#menu1-select4 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    color: grey;
+    padding: 12px 0px 12px 0px
+}
+
+#menu1-select4:hover {
+    text-decoration: underline;
+    color: black
+}
+
+.top-menu ul li:hover .in-menu1 ul {
+    display: block;
+}
+
+/* End First dropdown 'About' */
+
+/*Second dropdown 'Help */
+
+/* setup */
+
+.in-menu2 {
+    display: none;
+}
+
+.top-menu ul li:hover .in-menu2 {
+    display: flex;
+    position: absolute;
+    line-height: 0%;
+    width: 210px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/* 2.1) Contact Support (add Icon) */
+
+#menu2-select1 .fa-external-link-square-alt {
+    display: inline-flex;
+    line-height: 0%;
+    padding-inline-start: 10px;
+}
+
+#menu2-select1 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding: 12px 0px 0px 0px;
+    color: grey;
+}
+
+#menu2-select1:hover {
+    text-decoration: underline;
+    color: black
+}
+
+/* 2.2) FAQ's */
+
+#menu2-select2 .fa-external-link-square-alt {
+    display: inline-flex;
+    line-height: 0%;
+    padding-inline-start: 10px;
+}
+
+#menu2-select2 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    line-height: 0%;
+    padding: 12px 0px 0px 0px;
+    color: grey;
+}
+
+#menu2-select2:hover {
+    text-decoration: underline;
+    color: black
+}
+
+/* 2.3) Get Kast */
+
+#menu2-select3 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    padding: 12px 0px 12px 0px;
+    color: grey;
+}
+
+#menu2-select3:hover {
+    text-decoration: underline;
+    color: black
+}
+
+.top-menu ul li:hover .in-menu2 ul {
+    display: block;
+}
+
+/* End Second dropdown 'Help' */
+
+/* Third dropdrown 'Community' */
+
+/* setup */
+
+.in-menu3 {
+    display: none;
+}
+
+.top-menu ul li:hover .in-menu3 {
+    display: flex;
+    position: absolute;
+    line-height: 0%;
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/* 3.1) Community Guidelines */
+
+#menu3-select1 {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding: 12px 0px 0px 0px;
+    color: grey;
+}
+
+#menu3-select1:hover {
+    text-decoration: underline;
+    color: black
+}
+
+/* 3.2) Founder's Hall of Fame */
+
+#menu3-select2 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding: 12px 0px 12px 0px;
+    color: grey;
+}
+
+#menu3-select2:hover {
+    text-decoration: underline;
+    color: black
+}
+
+.top-menu ul li:hover .in-menu3 ul {
+    display: block;
+}
+
+/* End Third Dropdown 'Community' */
+
+button {
+    display: inline;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    height: 25px;
+    text-align: center;
+    padding: 2px 0px 10px 0px;
+    margin-left: 40px;
+    margin-right: 5px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 2px;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+#premium {
+    padding-right: 6px;
+}
+
+#premium:hover {
+    text-decoration: underline;
+}
+
+/* End Nav bar */
+
+/* Section one, laptop/text */
+
+.section1 {
+    position: absolute;
+    z-index: -1;
+    margin-top: -20px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#laptop {
+    margin-top: 200px;
+    width: 615px;
+    height: 350px;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 52px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+p {
+    text-align: center;
+    max-width: 650px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.big-button {
+    height: 45px;
+    width: 195px;
+    border-radius: 3px;
+    border: none;
+    align-self: center;
+    padding-top: 6px;
+    margin-right: 35px;
+    background-color: rgb(255, 141, 44);
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.big-button:hover {
+    transform: scale(1.03);
+    transition: ease-in-out 0.2s;
+}
+
+.button-tag {
+    text-decoration: none;
+    color: white;
+}
+
+/* Section two, white */
+
+.section2-white {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    margin-left: -10px;
+    margin-top: 900px;
+    padding-top: 108px;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(67, 65, 70);
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+.logo-list {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 900px;
+    margin-left: 500px;
+}
+
+img {
+    padding-right: 60px;
+    margin-top: 50px;
+    width: 200px;
+    height: 100px;
+}
+
+#quote {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin-right: 675px;
+    font-size: 18px;
+    color: rgb(67, 65, 70);
+}
+
+/* End Section 2 */
+
+/* Section 3 Green Background */
+
+.section3-green {
+    display: block;
+    position: absolute;
+    background-image: url(https://www.kastapp.co/images/green-bg.jpg);
+    background-position: center;
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    margin-left: -10px;
+    margin-top: 1500px;
+    padding-top: 108px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#section3-title {
+    text-align: center;
+    margin-top: 0px
+}
+
+#p1 {
+    margin-top: 60px;
+    line-height: 1.2;
+}
+
+#p2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    line-height: 1.2
+}
+
+/* End Section 3 Green Background */
+
+/* Section 4 Video */
+
+.section4-with-video {
+    display: block;
+    position: absolute;
+    background-color: white;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin-left: -10px;
+    margin-top: 2080px;
+    padding-top: 108px;
+    color: rgb(67, 65, 70);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+iframe {
+    width: 50%;
+    height: 60%;
+    margin-top: 0px;
+}
+
+#section4-title {
+    margin-top: 0px;
+    font-size: 45px;
+}
+
+#p3 {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    margin-left: 580px;
+    line-height: 1.4;
+}
+#under-vid-title {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+#section4-big-button {
+    height: 48px;
+    width: 198px;
+    border-radius: 3px;
+    border: none;
+    padding-top: 6px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    margin-right: 32px;
+    background-color: rgb(255, 141, 44);
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+#section4-big-button:hover {
+    transform: scale(1.03);
+    transition: ease-in-out 0.2s;
+}
+
+#section4-button-tag {
+    text-decoration: none;
+    color: white;
+}
+
+
+#p4 {
+   font-size: 14px;
+   margin-top: 12px;
+   
+}
+
+#learn-more-tag {
+    color: rgb(255, 141, 44);
+    text-decoration: none;
+}
+
+#learn-more-tag:hover {
+    text-decoration: underline;
+}
+/* End section 4 with video */
