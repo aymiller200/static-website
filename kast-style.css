@@ -1,17 +1,30 @@
-
-body {
-    background-image: url(https://www.kastapp.co/images/gradient-violet-bg.jpg);
-    background-position: 100% 202%;
-    background-size: cover;
-    width:100%;
-    height:100%;
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
+/* Nav bar and section 1 with purple background */
+
+.section1-background {
+    display: block;
+    position: absolute;
+    background-image: url(https://www.kastapp.co/images/gradient-violet-bg.jpg);
+    background-position:100% 100%;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 120px;  
+}
 
 /* Nav bar */
 
 .top-menu {
     display: flex;
+    z-index: 2;
     justify-content: flex-end;
     background-color: transparent;
     margin-top: 10px;
@@ -29,7 +42,7 @@ body {
 
 .top-menu ul li a {
     margin: 15px;
-    padding: 5px;
+    padding: 0px;
     padding-bottom: 15px;
     text-decoration: none;
     color: white;
@@ -53,7 +66,7 @@ body {
     width: 200px;
     height: auto;
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 #kast-logo:hover {
@@ -326,8 +339,8 @@ button:hover {
 
 .section1 {
     position: absolute;
-    z-index: -1;
-    margin-top: -20px;
+    z-index: 1;
+    margin-top: 80px;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -336,9 +349,9 @@ button:hover {
 }
 
 #laptop {
-    margin-top: 200px;
-    width: 615px;
-    height: 350px;
+    margin-top: 80px;
+    width: 605px;
+    height: 360px;
     padding-left: 20px;
 }
 
@@ -365,7 +378,6 @@ p {
     width: 195px;
     border-radius: 3px;
     border: none;
-    align-self: center;
     padding-top: 6px;
     margin-right: 35px;
     background-color: rgb(255, 141, 44);
@@ -388,14 +400,13 @@ p {
 .section2-white {
     display: block;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     width: 100%;
     height: 80%;
     margin-left: -10px;
-    margin-top: 900px;
-    padding-top: 108px;
+    margin-top: 850px;
+    padding-top: 200px;
     background-color: white;
-    background-position: center;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     color: rgb(67, 65, 70);
@@ -415,7 +426,7 @@ h2 {
     justify-content: space-evenly;
     list-style: none;
     width: 900px;
-    margin-left: 300px;
+    margin-left: 270px;
 }
 
 img {
@@ -429,10 +440,11 @@ img {
     display: flex;
     flex-wrap: nowrap;
     white-space: nowrap;
-    margin-right: 410px;
+    margin-right: 435px;
     font-size: 18px;
     color: rgb(67, 65, 70);
 }
+
 
 /* End Section 2 */
 
@@ -444,12 +456,13 @@ img {
     background-image: url(https://www.kastapp.co/images/green-bg.jpg);
     background-position: center;
     text-align: center;
-    z-index: -1;
+    z-index: 0;
     width: 100%;
-    height: 70%;
+    height: 60%;
     margin-left: -10px;
-    margin-top: 1500px;
-    padding-top: 108px;
+    margin-top: 1600px;
+    padding-top: 100px;
+    padding-bottom: 0px;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
@@ -480,15 +493,14 @@ img {
     background-color: white;
     background-size: cover;
     text-align: center;
-    z-index: -1;
+    z-index: 0;
     width: 100%;
     height: 110%;
     margin-left: -10px;
-    margin-top: 2080px;
+    margin-top: 2200px;
     padding-top: 108px;
     color: rgb(67, 65, 70);
     font-family: 'Roboto', sans-serif;
-
 }
 
 iframe {
@@ -510,6 +522,7 @@ iframe {
     margin-left: 340px;
     line-height: 1.4;
 }
+
 #under-vid-title {
     text-align: center;
     font-size: 22px;
@@ -541,11 +554,9 @@ iframe {
     color: white;
 }
 
-
 #p4 {
-   font-size: 14px;
-   margin-top: 12px;
-   
+    font-size: 14px;
+    margin-top: 12px;
 }
 
 #learn-more-tag {
@@ -555,6 +566,56 @@ iframe {
 
 #learn-more-tag:hover {
     text-decoration: underline;
+}
+
+@media (orientation:portrait), (max-width: 1439px) {
+    .section1-background{
+        height:110%;
+        z-index:1;
+    }
+
+    #kast-logo{
+        margin-left: 60px;
+    }
+
+    .section2-white {
+        
+        margin-top: 900px;
+        margin-left:0px;
+        padding-top:100px;
+        padding-bottom: 0px;
+        z-index: 0;
+    }
+    .logo-list {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 800px;
+    }
+    #quote {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        margin-left: 315px;
+    }
+
+    .section3-green {
+        margin-top:1480px;
+        margin-left: 0px;
+    }
+
+    .section4-with-video {
+        margin-top: 2025px;
+        padding-bottom: 50px;
+    }
+
+    #p3 {
+        margin-left: 300px;
+    }
+
 }
 
 
